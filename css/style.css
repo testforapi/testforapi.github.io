@@ -13,11 +13,12 @@ body {
 }
 .line{
 	width: 70%;
-	margin:10px auto;
+	margin: 10px auto;
 	border-top: 5px solid #000FFF;
 }
 .sub{
 	width: 70%;
+	margin: 10px auto;
 	text-align:center;
 }
 .fb-comments{
