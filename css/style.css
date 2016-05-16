@@ -11,10 +11,13 @@ body {
     border-radius: 10px;
     font-weight: bold;
 }
+.line{
+	width: 70%;
+	border-top: 5px solid #000FFF;
+}
 .sub{
 	width: 70%;
 	margin:10px auto;
-	border-top: 5px solid #000FFF;
 	text-align:center;
 }
 .fb-comments{
