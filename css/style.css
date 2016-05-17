@@ -4,6 +4,7 @@ body {
 .outter{
 	width:70%;
 	margin: 5px auto;
+	display: inline-block;
 }
 .main{
 	width: 500px;
@@ -14,9 +15,6 @@ body {
     padding: 15px 0;
     border-radius: 10px;
     font-weight: bold;
-}
-.main_sub{
-	float:right;
 }
 .line{
 	width: 70%;
