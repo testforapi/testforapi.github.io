@@ -21,6 +21,7 @@ body {
 .main_sub{
 	float:right;
 	margin-top: 30px;
+	border: 5px solid #4267B2;
 }
 .line{
 	width: 70%;
