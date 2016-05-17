@@ -3,6 +3,7 @@ body {
 }
 .outter{
 	width:70%;
+	margin: 0 auto;
 }
 .main{
 	width: 500px;
@@ -15,7 +16,7 @@ body {
     font-weight: bold;
 }
 .main_sub{
-	/*float:right;*/
+	float:right;
 }
 .line{
 	width: 70%;
