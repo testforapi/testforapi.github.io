@@ -22,8 +22,8 @@ body {
 .line{
 	width: 70%;
 	margin: 10px auto;
-	border-top: 5px solid #4267B2;
-	padding-top: 100px;
+	border-bottom: 5px solid #4267B2;
+	padding-top: 120px;
 	
 }
 .sub{
