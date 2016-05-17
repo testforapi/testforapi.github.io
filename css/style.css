@@ -11,6 +11,10 @@ body {
     border-radius: 10px;
     font-weight: bold;
 }
+.main_sub{
+	float:right;
+	
+}
 .line{
 	width: 70%;
 	margin: 10px auto;
