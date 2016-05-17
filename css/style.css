@@ -4,7 +4,7 @@ body {
 .outter{
 	width:70%;
 	margin: 5px auto;
-	display: inline-block;
+	display: block;
 }
 .main{
 	width: 500px;
