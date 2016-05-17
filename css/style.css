@@ -12,8 +12,7 @@ body {
     font-weight: bold;
 }
 .line{
-	width: 70%;
-	margin: 10px auto;
+	margin: 10px auto 10px;
 	border-top: 5px solid #4267B2;
 }
 .sub{
