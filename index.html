@@ -23,7 +23,14 @@
       version    : 'v2.6'
     });
   };
-
+  // Get Embedded Video Player API Instance
+   var my_video_player;
+   FB.Event.subscribe('xfbml.ready', function(msg) {
+   if (msg.type === 'video') {
+   	my_video_player = msg.instance;
+   }
+   });
+   };
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -39,7 +46,7 @@
 	<div class="main_sub">
 		<div class="fb-page" data-href="https://www.facebook.com/104%E8%81%B7%E6%B6%AF%E7%A4%BE%E7%BE%A4-277429262382774/" data-tabs="timeline" data-width="500" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
 	</div>
-	<div class="quote">
+<div class="quote">
  <h1>HOTTEST TOPICE TODAY</h1>
   <div class="fb-like"
   data-share="true"
@@ -57,7 +64,11 @@
   <div class="fb-quote"></div>
   </div>
 </div>
-
+ <div  
+    class="fb-video" 
+    data-href="https://www.facebook.com/facebook/videos/10153231379946729/" 
+    data-width="500" 
+    data-allowfullscreen="true"></div>
 <div class="line">
 
 
