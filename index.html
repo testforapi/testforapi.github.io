@@ -18,13 +18,16 @@
     <div id="fb-root"></div>
     <div id="userdata"></div>
     <script type="text/javascript">
-      FB.init({
-         appId: "1535273756782252", 
-         status: true,
-         cookie: true,
-         xfbml: true,
-         oauth: true
-      });
+      window.fbAsyncInit = function() {
+	      FB.init({
+	         appId: "1535273756782252", 
+	         status: true,
+	         cookie: true,
+	         xfbml: true,
+	         oauth: true,
+	         version: 'v2.6'
+	      });
+	};
 
       FB.getLoginStatus(function(response) {
       if (response.status === "connected") {
