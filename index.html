@@ -14,6 +14,45 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<button id="fb-login">Login to Facebook</button>
+    <div id="fb-root"></div>
+    <div id="userdata"></div>
+    <script type="text/javascript">
+      FB.init({
+         appId: "1535273756782252", 
+         status: true,
+         cookie: true,
+         xfbml: true,
+         oauth: true
+      });
+
+      FB.getLoginStatus(function(response) {
+      if (response.status === "connected") {
+        var uid = response.authResponse.userID;
+        var accessToken = response.authResponse.accessToken;
+         
+      } else if (response.status === "not_authorized") {
+        // the user is logged in to Facebook, 
+        // but has not authenticated your app
+      } else {
+        // the user isn't logged in to Facebook.
+      }
+      $("#fb-login").click(function() {
+    //initiate OAuth Login
+    FB.login(function(response) {
+        // if login was successful, execute the following code
+        if (response.authResponse) {
+            FB.api("/me/likes?limit=1000", function(details) {
+                // output the response
+                $("#userdata").html(JSON.stringify(details, null, '\t'));
+                $("#fb-login").attr("style", "display:none;");
+            });
+        }
+    }, {
+        scope: "user_likes"
+    });
+}); 
+    </script>
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
