@@ -38,8 +38,10 @@
      if (d.getElementById(id)) {return;}
      js = d.createElement(s); js.id = id;
      console.log(js);
+     console.log(js.id);
      js.src = "//connect.facebook.net/zh-TW/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
+     console.log(js.parentNode);
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <div class="outter">
